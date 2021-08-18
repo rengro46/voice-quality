@@ -20,16 +20,11 @@ The System Architecure is depicted below:
 
 
 The system works as follows:
-1. The SIP Application 
+1. The SIP Application connects via the strongswan host across an IPSec tunnel into the client's enterpise voice environment. This enterprise voice environment consist of a number of components, yet have been simplified for purpose of this description. The primary purpose of the sIP Application is to run synthtic voice calls across the entire SIP path being used by the clients call centre environment, to ensure the voice quality across the managed compoents provided by the voice manged services provider.
+2. The SIP application acts as both the dailer(orginator) and as dialer (receiver) parties, to fully emulate the experience of a call centre customer dialing into the call centre, as well as the call center agent receiving this voice call. As part of the synthetic call, a sound file is being played, to create sound amplitude acrocc bothe channels to send and receive audio as part of the simulated call experience.
+3. The backend component of the SIP Application is connected with an MySQL ODBC driver to an Aurora MySQL database to capture all of the call experience metrics
+4. The user frontend of this solution is a Grafana Dashboard created on Grafana 8, installed on a small EC2 instance - t3-micro. which is connected to the Aurora MySQL instance, to retrice the call quality metrics. 
+5. The Grafana dashboard is presented as an embedded panel within a Django portal to allow the Voice engineers that are based on client site to log into the portal via Active Directory federation, in order to be able to browse the Grafana voice quality metrics graphs .
+6. The 
 
-## Extra Credit: Keep on building!
-
-Change the placeholder Octocat gif on your GitHub Pages website by [creating your own personal Octocat emoji](https://myoctocat.com/build-your-octocat/) or [choose a different Octocat gif from our logo library here](https://octodex.github.com/). Add that image to line 12 of your `index.html` file, in place of the `<img src=` link.
-
-Want to add even more code and fun styles to your GitHub Pages website? [Follow these instructions](https://github.com/github/personal-website) to build a fully-fledged static website.
-
-![octocat](./images/create-octocat.png)
-
-## Everything you need to know about GitHub
-
-Getting started is the hardest part. If there’s anything you’d like to know as you get started with GitHub, try searching [GitHub Help](https://help.github.com). Our documentation has tutorials on everything from changing your repository settings to configuring GitHub from your command line.
+   

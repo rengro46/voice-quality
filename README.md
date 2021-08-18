@@ -7,7 +7,7 @@ This is a development project to perform simple voice quality measurement
 
 This project consist of a number of AWS platforms and components as follows:
 1. Multiple VPC's (VPC-A - Shared Services), (VPC-B - Unified Comms), (VPC-C - Client Connectivity Unit) 
-3. Multiple EC2 instances (SIP App host, Strongswan Host, Grafana Host)
+3. Multiple EC2 instances (SIP App host, Strongswan Host, NAT64 Hosts, Grafana Host)
 4. a Transit Gateway - to interconnect VPC's via IPV6 only!
 5. an Aurora MySQL instance - for storing Voice CDR record
 

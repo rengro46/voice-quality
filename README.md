@@ -15,6 +15,8 @@ This project consist of a number of AWS platforms and components as follows:
 
 The System Architecure is depicted below:
 
+[System Architecture diagram](./spi-voice.jpg)
+
 
 
 The system works as follows:

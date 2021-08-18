@@ -11,6 +11,12 @@ This project consist of a number of AWS platforms and components as follows:
 4. a Transit Gateway - to interconnect VPC's via IPV6 only!
 5. an Aurora MySQL instance - for storing Voice CDR record
 
+## Architecture
+
+The System Architecure is depicted below:
+
+
+
 The system works as follows:
 1. The SIP Application 
 

@@ -17,7 +17,7 @@ The System Architecure is depicted below:
 
 [Architecture Diagram](./spi-voice.jpg)
 
-[img src = ./spi-voice.jpg]
+<img src = ./spi-voice.jpg>
 
 The system works as follows:
 1. The SIP Application connects via the strongswan host across an IPSec tunnel into the client's enterpise voice environment. This enterprise voice environment consist of a number of components, yet have been simplified for purpose of this description. The primary purpose of the sIP Application is to run synthtic voice calls across the entire SIP path being used by the clients call centre environment, to ensure the voice quality across the managed compoents provided by the voice manged services provider.

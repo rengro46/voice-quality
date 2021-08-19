@@ -25,7 +25,7 @@ The system works as follows:
 3. The backend component of the SIP Application is connected with an MySQL ODBC driver to an Aurora MySQL database to capture all of the call experience metric data in the CDR records
 4. The user frontend of this solution is a Grafana Dashboard created on Grafana 8, installed on a small EC2 instance - t3-micro. which is connected to the Aurora MySQL instance, to retrice the call quality metrics. 
 5. The Grafana dashboard is presented as an embedded panel within a Django portal to allow the Voice engineers that are based on client site to log into the portal via Active Directory federation, in order to be able to browse the Grafana voice quality metrics graphs.
-6. The NAT65 hosts are being used to enable the connectivity to the Aurora DB across the Transit Gateway IPV6 only links between the VPC's 
+6. The NAT64 hosts are being used to enable the IPV4 connectivity to the Aurora DB across the Transit Gateway's IPV6 only links between the VPC's 
 
 CDR Records in SIP Application
 

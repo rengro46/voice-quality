@@ -115,7 +115,7 @@ This project consist of a number of AWS platforms and components as follows:
 
 The System Architecure is depicted below:
 
-<img src="./spi-voice.jpg" height = 550, width = 400>
+<img src="./spi-voice.jpg" width=400 height=550>
 
 ---
 

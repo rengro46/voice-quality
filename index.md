@@ -105,15 +105,15 @@ The Custom Voice Quality Monitoring System (VQMS) aims to enhance call quality a
 
 This project consist of a number of AWS platforms and components as follows:
 1. Multiple VPC's (VPC-A - Shared Services (Grafana, Django Portal etc), (VPC-B - Unified Comms - Aurora DB etc), (VPC-C - Client Connectivity Pod + SIP application) 
-3. Multiple EC2 instances (SIP App host, Strongswan Host, NAT64 Hosts, Grafana Host)
-4. a Transit Gateway - to interconnect VPC's via IPV6 only!
-5. an Aurora MySQL instance - for storing Voice CDR record
+2. Multiple EC2 instances (SIP App host, Strongswan Host, NAT64 Hosts, Grafana Host)
+3. a Transit Gateway - to interconnect VPC's via IPV6 only!
+4. an Aurora MySQL instance - for storing Voice CDR record
 
 ---
 
 #### Architecture
 
-The System Architecure is depicted below:
+The Network Architecure is depicted below:
 
 <img src="./spi-voice.jpg" width=400 height=550>
 
